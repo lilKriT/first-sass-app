@@ -1,0 +1,16 @@
+$fontStack: Arial, Helvetica, sans-serif;
+$lightColor: #f4f4f4;
+$primaryColor: #0e6cff;
+$secondaryColor: #ff8700;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $lightColor;
+  font-family: $fontStack;
+  line-height: 1.6;
+}

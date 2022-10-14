@@ -81,3 +81,11 @@ start the name with \_
 
 }
 ```
+
+# Workflow
+
+- create /css and /scss
+- create style.scss
+- `npm init -y`
+- `npm i -g sass`
+- add a script `sass --watch scss/style.scss css/style.css` or use live sass plugin
