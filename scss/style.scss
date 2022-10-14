@@ -14,3 +14,14 @@ body {
   font-family: $fontStack;
   line-height: 1.6;
 }
+
+// Helper classes
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
