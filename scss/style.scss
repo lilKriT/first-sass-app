@@ -39,10 +39,12 @@ header {
   background-repeat: no-repeat;
   background-position: center bottom -820px;
   min-height: 100vh;
-  box-shadow: inset 0 0 0 100vh rgb(0 0 0 / 0.3);
+  box-shadow: inset 0 0 50vh 25vh rgb(0 0 0 / 0.5);
 
   a.logo {
     color: #000;
+    color: $primaryColor;
+    filter: drop-shadow(0 0 5px black);
     transition: all 150ms ease-in-out;
 
     &:hover {
@@ -72,8 +74,15 @@ header {
           color: #000;
 
           &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
           }
+        }
+
+        a.active {
+          color: $primaryColor;
+          color: $secondaryColor;
+          filter: drop-shadow(0 0 5px $secondaryColor);
+          filter: drop-shadow(0 0 3px $secondaryColor);
         }
       }
     }
@@ -85,9 +94,13 @@ header {
 
     h2 {
       color: $primaryColor;
-      color: #119ca8;
+      color: #fff;
       font-size: 3rem;
       text-transform: uppercase;
+      text-align: center;
+    }
+
+    .buttons {
     }
   }
 }

@@ -9,8 +9,9 @@
   font-size: 18px;
   font-weight: bold;
   font-family: $headerFont;
-  transition-duration: 300ms;
+  transition-duration: 150ms;
   transition-timing-function: ease-in-out;
+  text-transform: uppercase;
 }
 
 .primaryBtn {
@@ -25,10 +26,14 @@
 
 .secondaryBtn {
   @extend %button;
-  background-color: $secondaryColor;
+  //   background-color: $secondaryColor;
+  border: 2px solid $secondaryColor;
   color: #fff;
+  color: $secondaryColor;
 
   &:hover {
     background-color: darken($secondaryColor, 10);
+    background-color: $secondaryColor;
+    color: #fff;
   }
 }
