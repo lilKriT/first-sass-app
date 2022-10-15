@@ -1,0 +1,24 @@
+@import "config";
+
+%button {
+  padding: 8px 16px;
+  display: inline-block;
+  margin: 3px;
+  border-radius: 6px;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: $headerFont;
+}
+
+.primaryBtn {
+  @extend %button;
+  background-color: $primaryColor;
+  color: #000;
+}
+
+.secondaryBtn {
+  @extend %button;
+  background-color: $secondaryColor;
+  color: #fff;
+}
