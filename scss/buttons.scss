@@ -9,16 +9,26 @@
   font-size: 18px;
   font-weight: bold;
   font-family: $headerFont;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 }
 
 .primaryBtn {
   @extend %button;
   background-color: $primaryColor;
   color: #000;
+
+  &:hover {
+    background-color: lighten($primaryColor, 10);
+  }
 }
 
 .secondaryBtn {
   @extend %button;
   background-color: $secondaryColor;
   color: #fff;
+
+  &:hover {
+    background-color: darken($secondaryColor, 10);
+  }
 }

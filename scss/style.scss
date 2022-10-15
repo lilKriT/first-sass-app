@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 body {
@@ -39,6 +39,16 @@ header {
   background-repeat: no-repeat;
   background-position: center bottom -820px;
   min-height: 100vh;
+  box-shadow: inset 0 0 0 100vh rgb(0 0 0 / 0.3);
+
+  a.logo {
+    color: #000;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 
   nav {
     display: flex;
@@ -54,12 +64,30 @@ header {
 
         a {
           padding: 8px 12px;
-          background: pink;
+          // background: pink;
           display: inline-block;
           text-transform: uppercase;
           font-weight: bold;
+          transition: all 150ms ease-in-out;
+          color: #000;
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
+    }
+  }
+
+  .header-content {
+    color: #fff;
+    font-size: 1.2rem;
+
+    h2 {
+      color: $primaryColor;
+      color: #119ca8;
+      font-size: 3rem;
+      text-transform: uppercase;
     }
   }
 }
