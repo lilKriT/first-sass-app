@@ -28,8 +28,31 @@ header {
   background-image: url("../images/balcony.jpg");
   background-size: 100vw;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom -820px;
   min-height: 100vh;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    menu {
+      display: flex;
+      list-style-type: none;
+
+      li {
+        display: flex;
+
+        a {
+          padding: 8px 12px;
+          background: pink;
+          display: inline-block;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
 
 .container {
