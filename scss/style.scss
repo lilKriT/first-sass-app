@@ -1,12 +1,10 @@
-$fontStack: Arial, Helvetica, sans-serif;
-$lightColor: #f4f4f4;
-$primaryColor: #0e6cff;
-$secondaryColor: #ff8700;
+@import "config";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 body {
@@ -24,4 +22,17 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+header {
+  background-image: url("../images/balcony.jpg");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
 }
